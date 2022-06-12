@@ -39,7 +39,7 @@
         position: relative;
         box-sizing: border-box;
         width: 350px;
-        height: 100px;
+        height: auto;
         padding: 10px;
         border-radius: 8px;
         font-size: 2rem;
@@ -51,7 +51,7 @@
         align-items: center;
         margin: 10px;
         box-shadow: 1px 1px 10px black;
-
+        text-align: center;
     }
     .pending {
         border-left: 12px solid #b73229;
@@ -95,7 +95,12 @@
     @media screen and (max-width: 650px) {
         .task {
             width: 180px;
-            height: 100px;
+            height: auto;
+            font-size: 1.2rem;
+            text-align: center;
+            text-overflow: "...";
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     } 
 </style>
