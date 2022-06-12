@@ -3,13 +3,11 @@
 		<h1>Tarefas</h1>
 		<TaskProgress :progress="progress"/>
 		<NewTask @taskAdded="addTask"/>
-		<div class="grid">
-			<TaskGrid 
-				@taskDeleted="deleteTask" 
-				@taskStateChanged="toggleTaskState"
-				:tasks="tasks" 
-			/>
-		</div>
+		<TaskGrid 
+			@taskDeleted="deleteTask" 
+			@taskStateChanged="toggleTaskState"
+			:tasks="tasks" 
+		/>
 	</div>
 </template>
 
@@ -75,7 +73,9 @@ export default {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 100vh;
+		height: inherit;
+		margin-top: 10%;
+		/* overflow: auto; */
 	}
 
 	#app h1 {
@@ -83,8 +83,5 @@ export default {
 		font-weight: 300;
 		font-size: 3rem;
 	}
-	
-	.grid {
-		overflow: auto;
-	}
+
 </style>

@@ -29,7 +29,6 @@ import Task from './Task.vue'
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        overflow: auto;
     }
 
     .task-grid{
