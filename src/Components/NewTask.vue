@@ -58,5 +58,21 @@
         cursor: pointer;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
-    } 
+    }
+
+    @media screen and (max-width: 650px) {
+        input.form-element {
+            width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        input.form-element {
+            width: 150px;
+            font-size: 1.6rem;
+        }
+        button.form-element {
+        font-size: 1.6rem;
+    }
+    }
 </style>

@@ -91,4 +91,11 @@
     .done .close {
         background-color:#0a8f08;
     }
+
+    @media screen and (max-width: 650px) {
+        .task {
+            width: 180px;
+            height: 100px;
+        }
+    } 
 </style>

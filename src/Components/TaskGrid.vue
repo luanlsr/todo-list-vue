@@ -29,6 +29,7 @@ import Task from './Task.vue'
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        overflow: auto;
     }
 
     .task-grid{
@@ -39,4 +40,5 @@ import Task from './Task.vue'
         color: #aaa;
         font-size: 1.7rem;
     }
+
 </style>
