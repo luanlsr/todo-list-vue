@@ -1,5 +1,7 @@
 # todo
 
+https://luanlsr.github.io/todo-list-vue/
+
 ## Project setup
 ```
 npm install
