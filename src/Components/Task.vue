@@ -38,7 +38,7 @@
     .task {
         position: relative;
         box-sizing: border-box;
-        width: 350px;
+        width: auto;
         height: auto;
         padding: 10px;
         border-radius: 8px;
