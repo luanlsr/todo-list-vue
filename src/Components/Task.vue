@@ -98,7 +98,6 @@
             height: auto;
             font-size: 1.2rem;
             text-align: center;
-            text-overflow: "...";
             overflow: hidden;
             text-overflow: ellipsis;
         }
