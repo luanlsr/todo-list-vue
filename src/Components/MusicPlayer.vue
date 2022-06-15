@@ -118,7 +118,8 @@
                 <table style="width:100%; border-collapse:collapse;">
                     <tbody>
                         <tr
-                            :style="`transition:all 0.25s linear; font-size:0.8rem; height:${itemHeightMin}px; ${iPlayItem===kitem?'':'cursor:pointer;'} color:${ iPlayItem===kitem?itemTextColorActive:item.mouseIn?itemTextColorHover:itemTextColor }`"
+                            :style="`transition:all 0.25s linear; font-size:0.8rem; 
+                            :${itemHeightMin}px; ${iPlayItem===kitem?'':'cursor:pointer;'} color:${ iPlayItem===kitem?itemTextColorActive:item.mouseIn?itemTextColorHover:itemTextColor }`"
                             :key="kitem"
                             v-for="(item,kitem) in list"
                             @mouseenter="item.mouseIn=true"
@@ -554,16 +555,12 @@ export default {
             }, 1)
         },
         dropFiles: function({ filesTree }) {
-            // console.log('methods dropFiles', filesTree)
             let vo = this
-            //textDropError
             vo.textDropError = null
-            //addItems, 改用timer會直接往後呼叫cb
             vo.addItems(filesTree, 'files', true)
         },
         dropError: function(err) {
             let vo = this
-            //textDropError
             vo.textDropError = err
         },
     },
