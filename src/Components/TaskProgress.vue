@@ -16,7 +16,7 @@
 <style>
     .tasks-progress {
         position: relative;
-        width: 80%;
+        width: 30%;
         color: #fff;
         border: 1px solid #fff;
         border-radius: 8px;

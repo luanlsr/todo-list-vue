@@ -8,6 +8,7 @@
 			@taskStateChanged="toggleTaskState"
 			:tasks="tasks" 
 		/>
+		<MusicPlayer />
 	</div>
 </template>
 
@@ -15,8 +16,10 @@
 import TaskGrid from './Components/TaskGrid.vue'
 import NewTask from './Components/NewTask.vue'
 import TaskProgress from './Components/TaskProgress.vue'
+import MusicPlayer from './Components/MusicPlayer.vue'
+
 export default {
-	components: {TaskGrid, NewTask, TaskProgress},
+	components: {TaskGrid, NewTask, TaskProgress, MusicPlayer},
 	data() {
 		return {
 			tasks: []

@@ -8,7 +8,11 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "lodash": "^4.17.21",
+    "w-component-vue": "^2.1.83",
+    "w-howler": "^1.0.16",
+    "wsemi": "^1.6.54"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.0",
