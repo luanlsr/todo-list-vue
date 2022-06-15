@@ -578,16 +578,20 @@ export default {
         display: flex;
         flex-direction: column;
         max-width: 500px;
-        margin-top: 100px;
-        margin-bottom: 50px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        border: 2px solid #fff !important;
+        padding: 10px;
+        border-radius: 30px !important;
     }
 
     .drop {
-        height: inherit;
+        height: 120px !important;
+        overflow: auto !important;
     }
 
     .player:hover {
-        background-color: transparent !important;
+        background-color: rgba(0, 0, 0, 0.2) !important;
         cursor: pointer;
     }
 

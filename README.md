@@ -2,6 +2,9 @@
 
 https://luanlsr.github.io/todo-list-vue/
 
+### Audioplayer reference:
+https://github.com/yuda-lyu/w-audioplayer-vue
+
 ## Project setup
 ```
 npm install
